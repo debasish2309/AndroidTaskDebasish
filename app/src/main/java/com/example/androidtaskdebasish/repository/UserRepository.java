@@ -36,7 +36,7 @@ public class UserRepository {
     public MutableLiveData<List<Item>> getImages(String searchType){
         final  MutableLiveData<List<Item>> imagesData  = new MutableLiveData<>();
         //Log.d("!!!url",String.valueOf(apiInterface.getImages(searchType,"002946188988351718532:e8d7pugedte","AIzaSyCfLIFYUbb7Ta37l6sGUwzRhUB19uq6hqc","image")));
-        apiInterface.getImages(searchType,"002946188988351718532:e8d7pugedte","AIzaSyCfLIFYUbb7Ta37l6sGUwzRhUB19uq6hqc","image")
+        apiInterface.getImages(searchType,"","","image")
                 .enqueue(new Callback<DataClass>() {
                     @Override
                     public void onResponse(Call<DataClass> call, Response<DataClass> response) {
